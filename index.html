@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" type="text/javascript"></script>
+    <link href="css/fontawesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/brands.css" />
     <title>My Portfolio</title>
 </head>
 <body>
@@ -15,14 +16,14 @@
             <h1>Full Stack Engineer Li</h1>
             <p>Welcome to my website!</p>
             </div>
-            <div class="menu">
+            <nav class="menu">
                 <ul>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </header>
         <div class="about-me-container">
             <div class="intro"><p>hi my name is li and i am studying really hard to become what i have always
@@ -31,10 +32,72 @@
                 <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"
                      alt="Happy ice cream animation"/></div>
         </div>
+        <div class="skills-container">
+            <h3 class="intro-section" onclick="openTab(event)">Skills</h3>
+            <div class="skills-content">
+                <section aria-labelledby="skills">
+                    <h2 id="skills">Skills</h2>
+
+                    <h3 class="muted" style="margin:6px 0 8px">Frontend</h3>
+                    <div class="chips" style="margin-bottom:10px">
+                        <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
+                        <span class="chip">React</span><span class="chip">Tailwind</span><span class="chip">Bootstrap</span>
+                    </div>
+
+                    <h3 class="muted" style="margin:12px 0 8px">Backend</h3>
+                    <div class="chips" style="margin-bottom:10px">
+                        <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">REST APIs</span>
+                        <span class="chip">MongoDB</span><span class="chip">PostgreSQL</span>
+                    </div>
+
+                    <h3 class="muted" style="margin:12px 0 8px">Tools</h3>
+                    <div class="chips">
+                        <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span>
+                        <span class="chip">Postman</span><span class="chip">Docker (basic)</span>
+                        <span class="chip">Vercel</span><span class="chip">Render</span><span class="chip">Netlify</span>
+                    </div>
+                </section>
+            </div>
+            <h3 class="intro-section" onclick="openTab(event)">Experience</h3>
+            <div class="skills-content">
+                <section aria-labelledby="experience">
+                    <h2 id="experience">Experience</h2>
+                    <div class="list">
+                        <article class="item">
+                            <h3>Full-Stack Developer <span class="muted">• Freelance</span></h3>
+                            <div class="meta">Jan 2023 to Present</div>
+                            <ul>
+                                <li>Built responsive apps with React, Node, and Express.</li>
+                                <li>Created REST APIs and added JWT auth with role based access.</li>
+                                <li>Deployed small projects on Vercel and Render with CI.</li>
+                            </ul>
+                        </article>
+
+                        <article class="item">
+                            <h3>Front-End Developer <span class="muted">• Pixel Studio</span></h3>
+                            <div class="meta">Jun 2021 to Dec 2022</div>
+                            <ul>
+                                <li>Implemented UI from Figma using React and Tailwind.</li>
+                                <li>Improved load time with code splitting and lazy loading.</li>
+                                <li>Collaborated with designers and QA to ship accessible features.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="social-container">
+            <h3>Let's Connect</h3>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-web-awesome fa-2x"></i>
+            <i class="fa-brands fa-slack fa-2x"></i>
+            <i class="fa-brands fa-github fa-2x"></i>
+        </div>
         <footer>
             <p>Developed by Li Tomchik</p>
         </footer>
     </section>
 </main>
+<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
